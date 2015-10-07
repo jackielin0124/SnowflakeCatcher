@@ -1,6 +1,7 @@
 Snowflake [] white;
 
 
+
 void setup()
 {
   size(300, 300);
@@ -10,7 +11,7 @@ void setup()
   {
     white[i]=new Snowflake();
   }
-  background(0);
+background(0);
 }
 
 
@@ -61,7 +62,7 @@ class Snowflake
   {
     //checking if line beneath is drawn
     if(-5<y && y<305){
-      if(get(x,y+4) != color(0)) {
+      if(get(x,y+10) != color(0)) {
         isMoving = false;
       }
       else {
@@ -87,9 +88,8 @@ class Snowflake
   void move()
   {
     //moves snowflake
-    if(isMoving==false);
+    if(isMoving==true);
       y=y+1;
-
     
   }
 
